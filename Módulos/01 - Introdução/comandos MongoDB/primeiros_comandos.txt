@@ -1,0 +1,14 @@
+-- Mostra os bancos disponíveis
+show dbs
+
+-- Cria e utiliza o banco
+use primeirobanco
+
+-- Insere dado no banco
+db.primeiracollection.insertOne({ nome: "Marcos", idade: 28})
+
+-- Mostra o primeiro dado
+db.primeiracollection.findOne({})
+
+-- Mostra todos os dados no banco
+db.primeiracollection.find()
